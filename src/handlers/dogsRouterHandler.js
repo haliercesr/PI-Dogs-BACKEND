@@ -50,7 +50,7 @@ const getDogNameHandler = async (req, res) => {
     try {
 
         const response = await getDogName(nombreFormateado)
-        if (response && response.length === 0) return res.status(200).send("No hay razas con ese nombre")
+        if (response && response.length === 0) return res.status(200).send(false)
 
         return res.status(200).json(response)
 
