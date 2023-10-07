@@ -51,7 +51,7 @@ const getDogNameHandler = async (req, res) => {
 
         const response = await getDogName(nombreFormateado)
         console.log(response)
-        if (response && response.length === 0) return res.status(200).send(false)
+        if (response && response.length === 0) return res.status(200).send("Sin resutados")
         
         return res.status(200).json(response)
 
