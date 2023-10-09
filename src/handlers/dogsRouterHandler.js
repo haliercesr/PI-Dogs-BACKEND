@@ -6,7 +6,7 @@ const { getDogIdRaza, getDogName, getDogs, postDogs } = require('../controllers/
 const getDogsHandler = async (req, res) => {
     try {
         response= await getDogs();
-         
+        
         return res.status(200).json(response);
     } catch (error) {
         console.log(error.message)
