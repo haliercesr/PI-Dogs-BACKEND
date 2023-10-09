@@ -21,7 +21,7 @@ const getDogs = async () => {
     console.log(dogsBdd)
      const allDogs = [...dogsBdd, ...dogsAPi]
      return allDogs
-     
+
     }catch(error){
         throw error;
     }
